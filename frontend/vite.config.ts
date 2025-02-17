@@ -21,13 +21,4 @@ export default defineConfig({
       },
     },
   },
-  build: {
-    rollupOptions: {
-      // Explicitly mark hono/client as external since it's meant to be processed differently
-      external: ["hono/client"],
-    },
-  },
-  optimizeDeps: {
-    include: ["hono/client"],
-  },
 });
